@@ -1,13 +1,13 @@
 # README.md
 
-# 🚀 Mass Emailing with AWS Lambda
+# Mass Emailing with AWS Lambda
 
 This project shows you how to set up an automated, serverless mass email sender using a few core AWS services. It's a fantastic way to learn about the power of serverless architecture and see how different services can work together seamlessly.
 
 This guide is written for beginners, with a "spoon-fed" approach to ensure you don't miss a single step.
 
 ---
-## 🛠️ Services Used
+## Services Used
 
 * **AWS Lambda**: A serverless compute service that runs your code without you needing to manage servers. We'll use it to run our Python script for sending emails.
 * **Amazon Simple Email Service (SES)**: A reliable, scalable, and cost-effective email service that will handle the delivery of our emails.
@@ -15,12 +15,12 @@ This guide is written for beginners, with a "spoon-fed" approach to ensure you d
 * **Amazon CloudWatch**: A monitoring and management service. We'll use its "Events" feature to schedule our Lambda function to run automatically on a set timer.
 
 ---
-## 🏗️ Architecture
+## Architecture
 
 ![AWS architecture for mass emailing](images/architecture.png)
 
 ---
-## ✍️ Step-by-Step Guide
+## Step-by-Step Guide
 
 ### Step 1: Create an IAM Role
 
@@ -62,7 +62,7 @@ Now let's create the place where our code will live.
 
 Amazon SES requires you to "verify" the email addresses you'll be sending from and to. This prevents spam and makes sure you own the emails you're using.
 If you have already configured SES prior to this, feel free to skip this step
-- In the AWS Management Console, search for and open the **SES** service '-->' SMTP Settings
+- In the AWS Management Console, search for and open the **SES** service ----> SMTP Settings
 - Create SMTP Credentials
 - Click SMTP Credentials
 - Create User (under smtp)
